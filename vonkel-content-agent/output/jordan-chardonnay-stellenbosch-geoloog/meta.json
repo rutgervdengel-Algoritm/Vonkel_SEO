@@ -1,0 +1,31 @@
+{
+  "title": "Jordan Chardonnay uit Stellenbosch, door een geoloog",
+  "meta_description": "Gary Jordan is geoloog. Dat hoor je in zijn Jordan Chardonnay uit Stellenbosch: een wijn die zijn streek en bodem laat zien, zonder marketingpraat.",
+  "slug": "jordan-chardonnay-stellenbosch-geoloog",
+  "primary_keyword": "Jordan Chardonnay",
+  "tags": [
+    "Zuid-Afrikaanse wijn",
+    "Stellenbosch",
+    "Chardonnay",
+    "Jordan Wine Estate",
+    "wijnhuizen"
+  ],
+  "canonical": "https://www.vonkelwijnen.nl/blogs/wijnhuizen/jordan-chardonnay-stellenbosch-geoloog",
+  "json_ld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Jordan Chardonnay uit Stellenbosch, door een geoloog\",\n  \"description\": \"Gary Jordan is geoloog. Dat hoor je in zijn Jordan Chardonnay uit Stellenbosch: een wijn die zijn streek en bodem laat zien, zonder marketingpraat.\",\n  \"author\": {\"@type\": \"Organization\", \"name\": \"Vonkel Wijnen\"},\n  \"publisher\": {\"@type\": \"Organization\", \"name\": \"Vonkel Wijnen\", \"url\": \"https://www.vonkelwijnen.nl\"},\n  \"datePublished\": \"2026-04-08\",\n  \"mainEntityOfPage\": \"https://www.vonkelwijnen.nl/blogs/wijnhuizen/jordan-chardonnay-stellenbosch-geoloog\",\n  \"about\": {\"@type\": \"Product\", \"name\": \"Jordan Barrel Fermented Chardonnay\", \"brand\": {\"@type\": \"Brand\", \"name\": \"Jordan Wine Estate\"}}\n}",
+  "pillar": "ontdek_het_wijnhuis",
+  "cluster_title": "Jordan Wine Estate: geoloog maakt Chardonnay in Stellenbosch",
+  "brief": {
+    "pillar": "ontdek_het_wijnhuis",
+    "cluster_title": "Jordan Wine Estate: geoloog maakt Chardonnay in Stellenbosch",
+    "keyword": "Jordan Chardonnay",
+    "intent": "transactional",
+    "target_word_count": [
+      800,
+      1100
+    ],
+    "angle": "Gary Jordan als geoloog, hoe hij terroir leest, Decanter award als objectief bewijs",
+    "score": 92
+  },
+  "generated_at": "2026-04-08T10:06:10+00:00",
+  "mode": "example-dry-run (handwritten by Claude to exemplify writer.py output)"
+}

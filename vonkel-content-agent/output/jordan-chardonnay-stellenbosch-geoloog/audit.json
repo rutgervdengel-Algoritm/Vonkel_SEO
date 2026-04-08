@@ -1,0 +1,97 @@
+{
+  "score": 100,
+  "passed": true,
+  "checks": [
+    {
+      "name": "title lengte",
+      "pass": true,
+      "detail": "52 tekens (doel 40-60)",
+      "weight": 10
+    },
+    {
+      "name": "keyword in title",
+      "pass": true,
+      "detail": "'Jordan Chardonnay' gevonden",
+      "weight": 10
+    },
+    {
+      "name": "meta description lengte",
+      "pass": true,
+      "detail": "147 tekens (doel 140-155)",
+      "weight": 10
+    },
+    {
+      "name": "slug kebab-case",
+      "pass": true,
+      "detail": "'jordan-chardonnay-stellenbosch-geoloog'",
+      "weight": 5
+    },
+    {
+      "name": "precies één H1",
+      "pass": true,
+      "detail": "gevonden: 1",
+      "weight": 10
+    },
+    {
+      "name": "H2-structuur",
+      "pass": true,
+      "detail": "6 H2-koppen (doel 2-6)",
+      "weight": 8
+    },
+    {
+      "name": "keyword in eerste 100 woorden",
+      "pass": true,
+      "detail": "",
+      "weight": 10
+    },
+    {
+      "name": "keyword dichtheid",
+      "pass": true,
+      "detail": "3x in 775 woorden = 0.39% (doel 0.5-1.5%)",
+      "weight": 8
+    },
+    {
+      "name": "woordaantal",
+      "pass": true,
+      "detail": "775 woorden (doel 700-1300)",
+      "weight": 6
+    },
+    {
+      "name": "interne links (2-4)",
+      "pass": true,
+      "detail": "3 gevonden",
+      "weight": 10
+    },
+    {
+      "name": "alt-teksten aanwezig",
+      "pass": true,
+      "detail": "geen afbeeldingen",
+      "weight": 0
+    },
+    {
+      "name": "verboden woorden afwezig",
+      "pass": true,
+      "detail": "geen hits",
+      "weight": 15
+    },
+    {
+      "name": "geen emoji",
+      "pass": true,
+      "detail": "",
+      "weight": 5
+    },
+    {
+      "name": "geen uitroeptekens",
+      "pass": true,
+      "detail": "0 gevonden (max 1)",
+      "weight": 3
+    },
+    {
+      "name": "schema.org JSON-LD",
+      "pass": true,
+      "detail": "Article geldig",
+      "weight": 8
+    }
+  ],
+  "fixes": []
+}

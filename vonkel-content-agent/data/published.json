@@ -1,0 +1,6 @@
+{
+  "_meta": {
+    "note": "Log van wat al gepubliceerd (of als dry-run gegenereerd) is. Gebruikt voor dedup in de planner."
+  },
+  "articles": []
+}
