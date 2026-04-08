@@ -2,5 +2,27 @@
   "_meta": {
     "note": "Log van wat al gepubliceerd (of als dry-run gegenereerd) is. Gebruikt voor dedup in de planner."
   },
-  "articles": []
+  "articles": [
+    {
+      "slug": "jordan-chardonnay-stellenbosch-geoloog",
+      "title": "Jordan Chardonnay uit Stellenbosch, door een geoloog",
+      "keyword": "Jordan Chardonnay",
+      "pillar": "ontdek_het_wijnhuis",
+      "cluster_title": "Jordan Wine Estate: geoloog maakt Chardonnay in Stellenbosch",
+      "generated_at": "2026-04-08T11:04:46+00:00",
+      "dry_run": true,
+      "status": "example_handwritten"
+    },
+    {
+      "slug": "jordan-chardonnay-stellenbosch-geoloog",
+      "title": "Jordan Chardonnay uit Stellenbosch, door een geoloog",
+      "keyword": "Jordan Chardonnay",
+      "pillar": "ontdek_het_wijnhuis",
+      "cluster_title": "Jordan Wine Estate: geoloog maakt Chardonnay in Stellenbosch",
+      "generated_at": "2026-04-08T10:06:10+00:00",
+      "dry_run": true,
+      "shopify_article_id": null,
+      "status": "draft_dry_run"
+    }
+  ]
 }

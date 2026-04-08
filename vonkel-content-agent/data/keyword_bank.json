@@ -1,8 +1,310 @@
 {
   "_meta": {
-    "generated_at": null,
-    "source": "seed — wordt bijgewerkt door `python -m src.research`",
-    "scoring_scale": "0-100 (hoger = betere SEO-kans voor Vonkel)"
+    "generated_at": "2026-04-08T11:04:19+00:00",
+    "source": "src.research via DuckDuckGo HTML",
+    "scoring_scale": "0-100 (hoger = betere SEO-kans voor Vonkel)",
+    "seed_count": 25
   },
-  "keywords": []
+  "keywords": [
+    {
+      "keyword": "Creation wijn Hemel-en-Aarde",
+      "intent": "informational",
+      "score": 71,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 1.0,
+        "long_tail_potential": 0.75
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:03:54+00:00"
+    },
+    {
+      "keyword": "Hemel-en-Aarde wijn",
+      "intent": "informational",
+      "score": 68,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 1.0,
+        "long_tail_potential": 0.5
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:03:55+00:00"
+    },
+    {
+      "keyword": "Jordan Chardonnay",
+      "intent": "informational",
+      "score": 68,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 1.0,
+        "long_tail_potential": 0.5
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:03:56+00:00"
+    },
+    {
+      "keyword": "Chenin Blanc Zuid-Afrika",
+      "intent": "informational",
+      "score": 67,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.867,
+        "long_tail_potential": 0.75
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:03:53+00:00"
+    },
+    {
+      "keyword": "beste Chenin Blanc",
+      "intent": "transactional",
+      "score": 67,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.867,
+        "long_tail_potential": 0.75
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:09+00:00"
+    },
+    {
+      "keyword": "Pinotage smaak",
+      "intent": "informational",
+      "score": 63,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.867,
+        "long_tail_potential": 0.5
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:03:58+00:00"
+    },
+    {
+      "keyword": "Pinotage uitleg",
+      "intent": "informational",
+      "score": 63,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.867,
+        "long_tail_potential": 0.5
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:03:59+00:00"
+    },
+    {
+      "keyword": "Chardonnay bij vis",
+      "intent": "informational",
+      "score": 60,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.667,
+        "long_tail_potential": 0.75
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:03:52+00:00"
+    },
+    {
+      "keyword": "Methode Cap Classique",
+      "intent": "informational",
+      "score": 60,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.667,
+        "long_tail_potential": 0.75
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:03:57+00:00"
+    },
+    {
+      "keyword": "Syrah Zuid-Afrika",
+      "intent": "informational",
+      "score": 56,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.667,
+        "long_tail_potential": 0.5
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:04+00:00"
+    },
+    {
+      "keyword": "Stellenbosch of Swartland",
+      "intent": "informational",
+      "score": 55,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.533,
+        "long_tail_potential": 0.75
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:00+00:00"
+    },
+    {
+      "keyword": "Swartland wijn",
+      "intent": "informational",
+      "score": 51,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.533,
+        "long_tail_potential": 0.5
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:03+00:00"
+    },
+    {
+      "keyword": "wijn bij Aziatisch eten Zuid-Afrika",
+      "intent": "informational",
+      "score": 46,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.9
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:12+00:00"
+    },
+    {
+      "keyword": "wijn bij lamsvlees Zuid-Afrika",
+      "intent": "informational",
+      "score": 46,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.9
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:16+00:00"
+    },
+    {
+      "keyword": "wijn proeven thuis Zuid-Afrika",
+      "intent": "informational",
+      "score": 46,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.9
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:17+00:00"
+    },
+    {
+      "keyword": "Stellenbosch wijn",
+      "intent": "informational",
+      "score": 44,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.333,
+        "long_tail_potential": 0.5
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:02+00:00"
+    },
+    {
+      "keyword": "Zuid-Afrikaanse wijn Nederland",
+      "intent": "informational",
+      "score": 43,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.75
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:06+00:00"
+    },
+    {
+      "keyword": "Zuid-Afrikaanse wijn cadeau",
+      "intent": "commercial",
+      "score": 43,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.75
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:07+00:00"
+    },
+    {
+      "keyword": "biologische wijn Zuid-Afrika",
+      "intent": "informational",
+      "score": 43,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.75
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:10+00:00"
+    },
+    {
+      "keyword": "wijn bij bobotie",
+      "intent": "informational",
+      "score": 43,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.75
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:13+00:00"
+    },
+    {
+      "keyword": "wijn bij braai",
+      "intent": "informational",
+      "score": 43,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.75
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:14+00:00"
+    },
+    {
+      "keyword": "Zuid-Afrikaanse wijn",
+      "intent": "informational",
+      "score": 40,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.5
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:05+00:00"
+    },
+    {
+      "keyword": "[wijnhuis] Zuid-Afrika",
+      "intent": "informational",
+      "score": 40,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.5
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:08+00:00"
+    },
+    {
+      "keyword": "natuurwijn Zuid-Afrika",
+      "intent": "informational",
+      "score": 40,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.5
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:11+00:00"
+    },
+    {
+      "keyword": "wijn-spijs Zuid-Afrika",
+      "intent": "informational",
+      "score": 40,
+      "signals": {
+        "competition_weakness": 0.5,
+        "assortment_relevance": 0.2,
+        "long_tail_potential": 0.5
+      },
+      "serp_sample": [],
+      "checked_at": "2026-04-08T11:04:18+00:00"
+    }
+  ]
 }
