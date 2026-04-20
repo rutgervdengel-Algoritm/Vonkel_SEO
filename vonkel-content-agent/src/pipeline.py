@@ -122,7 +122,7 @@ def main() -> None:
     parser.add_argument(
         "--dry-run",
         action="store_true",
-        default=(env("AGENT_DEFAULT_DRY_RUN", "true") or "true").lower() == "true",
+        default=(env("AGENT_DEFAULT_DRY_RUN", "false") or "false").lower() == "true",
         help="nooit publiceren, alleen lokaal",
     )
     parser.add_argument("--no-dry-run", dest="dry_run", action="store_false")
