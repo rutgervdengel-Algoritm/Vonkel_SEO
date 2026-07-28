@@ -71,4 +71,4 @@ Als je een jonge jaargang koopt, doe hem geen plezier door hem meteen te openen:
 
 Voor de bredere context over wat Zuid-Afrikaanse wijn onderscheidt en waarom we ons tot dit ene land beperken, is er onze [gids over Zuid-Afrikaanse wijn](/blogs/zuid-afrika/zuid-afrikaanse-wijn-gids). Jordan is een van de huizen die op de lijst staat omdat het verhaal en het glas elkaar dekken — de geologie is er niet om over te vertellen, maar omdat je haar proeft.
 
-De [Jordan Barrel Fermented Chardonnay](https://www.vonkelwijnen.nl/products/jordan-chardonnay) staat in onze selectie, met de achtergrond die je hierboven las.
+De [Jordan Barrel Fermented Chardonnay](https://www.vonkelwijnen.nl/products/jordan-barrel-fermented-chardonnay-stellenbosch) staat in onze selectie, met de achtergrond die je hierboven las.

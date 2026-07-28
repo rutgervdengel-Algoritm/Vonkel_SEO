@@ -1,16 +1,5 @@
 # seo_targets.yaml — Topic cluster model voor Vonkel Wijnen
 #
-# Het topic cluster model werkt als volgt:
-#   - Iedere "pillar" is een breed, evergreen onderwerp (bv. "Zuid-Afrikaanse wijn")
-#   - Clusters zijn long-tail subtopics onder die pillar
-#   - Ieder cluster-artikel linkt naar zijn pillar; pillar linkt naar clusters
-#   - Dit bouwt topical authority richting Google zonder dat we adverteren
-#
-# Werkwijze voor de planner:
-#   1. Kies eerst een pillar met de laagste dekking (coverage_target vs huidige)
-#   2. Kies daarbinnen het cluster-item met de hoogste opportunity_score
-#   3. Kies angle passend bij search_intent
-#
 # Publicatievolgorde eerste 6 weken (scores zijn hierop afgestemd):
 #   Week 1: Jordan spotlight (klaar)
 #   Week 2: Chenin Blanc uit Zuid-Afrika        → score 95
@@ -24,11 +13,10 @@ pillars:
   zuid_afrikaanse_wijn:
     title: "Zuid-Afrikaanse wijn voor Nederlandse liefhebbers"
     slug: zuid-afrikaanse-wijn
-    coverage_target: 8
+    coverage_target: 6
     description: >
-      Pillar die de brede context neerzet: geschiedenis, streken, stijlen,
-      waarom Zuid-Afrika als wijnland anders is. De lander voor mensen die
-      verder willen dan Bordeaux en Rioja.
+      Pillar die de brede context neerzet: streken, druiven, stijlen,
+      waarom Zuid-Afrika als wijnland anders is.
     primary_keyword: "Zuid-Afrikaanse wijn"
     search_intent: informational
     target_url_path: /blogs/zuid-afrika/zuid-afrikaanse-wijn-gids
@@ -38,39 +26,41 @@ pillars:
         intent: informational
         opportunity_score: 95
         angle: >
-          Verschil met Loire (warmer, droger, meer textuur), old vines in Swartland
-          en Stellenbosch, stilistisch spectrum van houtvrij fris tot amfora-complex.
-          Mullineux, Sadie en Alheit als concrete voorbeelden uit ons assortiment.
-        linked_products: [mullineux-old-vines-white, sadie-palladius, alheit-cartology]
+          Verschil met Loire (warmer, droger, meer textuur), old vines.
+          Drie heel verschillende stijlen uit ons assortiment: Thistle & Weed
+          Brandnetel (Simonsberg, 40+ jaar), Keermont Terrasse (blend met
+          Chardonnay), Remhoogte First Light (toegankelijke ingang).
+        linked_products:
+          - thistle-and-weed-brandnetel-chenin-blanc-stellenbosch
+          - keermont-terrasse-stellenbosch
+          - remhoogte-first-light-chenin-blanc-stellenbosch
       - title: "Pinotage zonder vooroordelen: het verhaal achter de Zuid-Afrikaanse handtekening"
         keyword: "Pinotage uitleg"
         intent: informational
         opportunity_score: 91
         angle: >
-          Slechte reputatie nuanceren (rubbery jaren 90 vs. moderne stijlen),
-          wat je kunt verwachten, Kanonkop als serieus referentiepunt.
-        linked_products: [kanonkop-kadette]
+          Slechte reputatie nuanceren (rubber jaren 90 vs. moderne stijlen).
+          Beaumont is het concrete tegenbewijs: biologisch, Walker Bay, koeler
+          klimaat — geen rubber. Dat is de haak.
+        linked_products:
+          - beaumont-pinotage-walker-bay
       - title: "Stellenbosch: wat je moet weten over Zuid-Afrika's bekendste streek"
         keyword: "Stellenbosch wijn"
         intent: informational
         opportunity_score: 65
         angle: >
-          Stellenbosch als veilige ingang in ZA wijn, nadruk op bodemvariatie
-          (graniet vs. klei), hoogteverschil, diverse stijlen. Jordan als anker.
-        linked_products: [jordan-chardonnay, kanonkop-kadette]
-      - title: "Methode Cap Classique: de Zuid-Afrikaanse mousserende wijn"
-        keyword: "Methode Cap Classique"
-        intent: informational
-        opportunity_score: 68
-        angle: >
-          Verschil met champagne (klimaat, druivenrassen, prijs-kwaliteit),
-          Graham Beck als toegankelijk startpunt, Obama-anekdote als haak.
-        linked_products: [graham-beck-brut-rose]
+          Bodemvariatie, hoogteverschil, diverse stijlen. Jordan als premium
+          benchmark, Keermont als bewijs dat Stellenbosch ook finesse kan,
+          Remhoogte als toegankelijke instapper.
+        linked_products:
+          - jordan-barrel-fermented-chardonnay-stellenbosch
+          - keermont-syrah-stellenbosch
+          - remhoogte-first-light-chenin-blanc-stellenbosch
 
   wijn_en_spijs:
     title: "Wijn-spijs combinaties met Zuid-Afrikaanse wijn"
     slug: wijn-en-spijs
-    coverage_target: 6
+    coverage_target: 5
     description: >
       Commercieel-intentie pillar. Mensen die "wat drink ik bij X" zoeken
       zijn dichter bij een aankoop. Elk cluster koppelt een concreet gerecht
@@ -84,48 +74,58 @@ pillars:
         intent: commercial
         opportunity_score: 94
         angle: >
-          Braai = bbq in ZA cultuur, geeft het artikel autoriteit. Rood vlees →
-          Kanonkop Pinotage of Boekenhoutskloof Syrah. Vis/groente op de braai →
-          Chenin of Mullineux. Seizoensrelevantie (mei-september) expliciet noemen.
-        linked_products: [kanonkop-kadette, boekenhoutskloof-syrah, mullineux-old-vines-white]
-      - title: "Welke wijn bij bobotie"
-        keyword: "wijn bij bobotie"
-        intent: commercial
-        opportunity_score: 70
-        angle: >
-          Specifiek Kaaps gerecht, zoet-hartige balance vraagt om licht rood of
-          off-dry wit. Zeldzame NL zoekterm met lage concurrentie. Pinotage of
-          Chenin als suggestie, uitleggen waarom.
-        linked_products: [kanonkop-kadette, mullineux-old-vines-white]
-      - title: "Chenin Blanc bij vis: wanneer het werkt en wanneer niet"
-        keyword: "Chenin Blanc bij vis"
-        intent: commercial
-        opportunity_score: 72
-        angle: >
-          Specifieker en eerlijker dan de generieke "Chardonnay bij vis"-aanpak.
-          Mullineux of Sadie bij gegrilde vis met saus, niet bij oesters.
-          Uitleg waarom textuur en zuur van Chenin beter matcht dan houtgelagerde
-          Chardonnay bij delicate vis.
-        linked_products: [mullineux-old-vines-white, alheit-cartology]
+          Braai = bbq in ZA cultuur. Rood vlees → Keermont Syrah of Beaumont
+          Pinotage. Vis/groente op de braai → Keermont Terrasse of Thistle & Weed.
+          Seizoensrelevantie (mei-september) expliciet verwerken.
+        linked_products:
+          - keermont-syrah-stellenbosch
+          - beaumont-pinotage-walker-bay
+          - keermont-terrasse-stellenbosch
       - title: "Zuid-Afrikaanse wijn cadeau onder 35 euro"
         keyword: "Zuid-Afrikaanse wijn cadeau"
         intent: transactional
         opportunity_score: 75
         angle: >
-          Seizoenspiek rond kerst/vaderdag/moederdag. Transactionele intent:
-          mensen zoeken een cadeau, niet een cursus wijn. Drie concrete
-          suggesties op prijs (onder €25, €25-35, iets bijzonders). Eerlijk
-          over wat je voor dat geld krijgt.
-        linked_products: [kanonkop-kadette, graham-beck-brut-rose, mullineux-old-vines-white]
+          Seizoenspiek rond kerst/vaderdag/moederdag. Drie prijslagen:
+          Remhoogte First Light of Soaring Eagle (€14.95 — verrassend veel
+          voor het geld), Beaumont Pinotage (€19.95 — iets bijzonders),
+          Thistle & Weed Brandnetel (€27.95 — voor de kenner). Eerlijk over
+          wat je voor dat geld krijgt.
+        linked_products:
+          - remhoogte-first-light-chenin-blanc-stellenbosch
+          - beaumont-pinotage-walker-bay
+          - thistle-and-weed-brandnetel-chenin-blanc-stellenbosch
+      - title: "Chenin Blanc bij vis: wanneer het werkt en wanneer niet"
+        keyword: "Chenin Blanc bij vis"
+        intent: commercial
+        opportunity_score: 72
+        angle: >
+          Thistle & Weed Brandnetel bij gegrilde vis met saus (textuur en
+          zuur vangen het vet). Keermont Terrasse bij lichtere vis.
+          Eerlijk: niet bij oesters of sashimi.
+        linked_products:
+          - thistle-and-weed-brandnetel-chenin-blanc-stellenbosch
+          - keermont-terrasse-stellenbosch
+      - title: "Welke wijn bij bobotie"
+        keyword: "wijn bij bobotie"
+        intent: commercial
+        opportunity_score: 70
+        angle: >
+          Zoet-hartige balance vraagt om licht rood of aromatisch wit.
+          Beaumont Pinotage (fruitig, geen tannine-bom) of Remhoogte
+          Soaring Eagle als Cape Blend. Zeldzame NL zoekterm, lage concurrentie.
+        linked_products:
+          - beaumont-pinotage-walker-bay
+          - remhoogte-soaring-eagle-stellenbosch
 
   ontdek_het_wijnhuis:
     title: "Ontmoet de wijnhuizen in onze selectie"
     slug: wijnhuizen
-    coverage_target: 8
+    coverage_target: 5
     description: >
-      Producer-spotlights, één per wijnmaker in de selectie. Dit zijn
-      bottom-funnel transactionele pagina's die de productpagina ondersteunen
-      met verhaal + E-E-A-T. Altijd gekoppeld aan een concreet product.
+      Producer-spotlights, één per wijnmaker in de selectie. Bottom-funnel
+      transactionele pagina's die de productpagina ondersteunen met
+      verhaal + E-E-A-T. Altijd gekoppeld aan een concreet product.
     primary_keyword: "[wijnhuis] Zuid-Afrika"
     search_intent: transactional
     target_url_path: /blogs/wijnhuizen
@@ -135,58 +135,78 @@ pillars:
         intent: transactional
         opportunity_score: 92
         angle: Gary Jordan als geoloog, hoe hij terroir leest, Decanter award als objectief bewijs
-        linked_products: [jordan-chardonnay]
-        published: true  # week 1 — al klaar
-      - title: "Thistle & Weed: natuurwijn uit Zuid-Afrika met een eigen logica"
-        keyword: "Thistle & Weed wijn"
+        published: true
+        linked_products:
+          - jordan-barrel-fermented-chardonnay-stellenbosch
+      - title: "Thistle & Weed: Chenin Blanc van 40 jaar oude stokken op de Simonsberg"
+        keyword: "Thistle Weed wijn"
         intent: transactional
         opportunity_score: 93
         angle: >
-          Franco Lourens' aanpak: geen toegevoegd sulfiet, wilde gisting, Cinsault
-          en Chenin uit oude wijngaarden. Waarom dit anders is dan de gemiddelde
-          "natural wine" kreet. Eerlijk: niet voor iedereen, wel voor wie nieuws
-          zoekt.
-        linked_products: [thistle-weed-roller-pigeon, thistle-weed-wine]
-      - title: "Keermont: drie wijnen, één steile helling in Stellenbosch"
+          De Brandnetel komt van een minuscuul perceel 40+ jaar oude stokken
+          op de Simonsberg. Tim Atkin 96 punten. Waarom dat perceel er toe doet,
+          wat old vines betekenen voor smaak, en wat je concreet in het glas krijgt.
+          Eerlijk: dit is geen alledaagse wijn.
+        linked_products:
+          - thistle-and-weed-brandnetel-chenin-blanc-stellenbosch
+      - title: "Keermont: drie wijnen van één domein in de Blaauwklippen Valley"
         keyword: "Keermont wijn"
         intent: transactional
         opportunity_score: 89
         angle: >
-          Alex Starey's terroir-focus op de Banghoek vallei. Drie wijnen die
-          elk een ander stuk van de helling laten horen. Zeldzaam in NL,
-          drie producten in onze selectie = extra SEO-voordeel per artikel.
-        linked_products: [keermont-fleurfontein, keermont-terrasse, keermont-topside]
-      - title: "Remhoogte: familiewijnhuis met twee gezichten in Stellenbosch"
+          Keermont Vineyards in de Blaauwklippen Valley, Stellenbosch. Drie heel
+          andere wijnen van hetzelfde domein: rosé (4 Barrels), wit (Terrasse),
+          rood (Syrah). Dat we alle drie voeren is het verhaal — toon wat het
+          domein kan over de volle breedte.
+        linked_products:
+          - keermont-4-barrels-rose-stellenbosch
+          - keermont-terrasse-stellenbosch
+          - keermont-syrah-stellenbosch
+      - title: "Remhoogte: twee wijnen als eerlijke instapper in Stellenbosch"
         keyword: "Remhoogte wijn"
         intent: transactional
         opportunity_score: 80
         angle: >
-          Murray Boustred combineert toegankelijke blends met serieuze
-          single-vineyard bottlingen. Twee producten in onze selectie,
-          goed als ingang voor mensen die ZA wijn nog ontdekken.
-        linked_products: [remhoogte-bouquet-blanc, remhoogte-estate-red]
+          Remhoogte op de Simonsberg. First Light Chenin Blanc (€14.95, oude
+          stokken, wit) en Soaring Eagle Cape Blend (€14.95, rood) zijn de
+          twee goedkoopste wijnen in onze selectie — maar dat is geen excuus
+          voor slordigheid. Wat je voor dat geld krijgt en waarom ze erin zitten.
+        linked_products:
+          - remhoogte-first-light-chenin-blanc-stellenbosch
+          - remhoogte-soaring-eagle-stellenbosch
+      - title: "Beaumont: biologische Pinotage uit Walker Bay"
+        keyword: "Beaumont Pinotage"
+        intent: transactional
+        opportunity_score: 77
+        angle: >
+          Historisch familiedomein in Bot River/Walker Bay. Biologisch. Pinotage
+          uit een koeler klimaat — dat maakt verschil voor het druivenras met de
+          slechtste reputatie in ZA. Concrete haak: Walker Bay is 300 km
+          verwijderd van de Stellenbosch-warmte.
+        linked_products:
+          - beaumont-pinotage-walker-bay
 
 # Kandidaat-keywords voor research.py
 research_seeds:
   - "Zuid-Afrikaanse wijn Nederland"
   - "beste Chenin Blanc"
   - "Pinotage smaak"
-  - "Syrah Zuid-Afrika"
   - "wijn cadeau onder 35 euro"
   - "Zuid-Afrikaanse wijn cadeau"
-  - "wijn bij lamsvlees"
-  - "natuurwijn Zuid-Afrika"
   - "Chenin Blanc bij vis"
   - "wijn bij braai"
   - "Thistle Weed wijn kopen"
-  - "Keermont wijn"
+  - "Keermont wijn Stellenbosch"
   - "Remhoogte wijn"
-  - "Methode Cap Classique Nederland"
+  - "Beaumont Pinotage"
+  - "biologische wijn Zuid-Afrika"
+  - "Pinotage Walker Bay"
+  - "wijn bij bobotie"
 
 # Scoring gewichten voor planner
 scoring:
   weights:
-    competition_weakness: 0.4 # hoe zwak is top-10 concurrentie (0-1)
-    assortment_relevance: 0.35 # linkt naar product in onze selectie?
-    long_tail_potential: 0.15 # lagere volume = lagere concurrentie
-    pillar_coverage_gap: 0.10 # vult cluster dat ondervertegenwoordigd is
+    competition_weakness: 0.4
+    assortment_relevance: 0.35
+    long_tail_potential: 0.15
+    pillar_coverage_gap: 0.10
