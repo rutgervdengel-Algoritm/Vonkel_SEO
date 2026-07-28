@@ -10,13 +10,21 @@
 #   1. Kies eerst een pillar met de laagste dekking (coverage_target vs huidige)
 #   2. Kies daarbinnen het cluster-item met de hoogste opportunity_score
 #   3. Kies angle passend bij search_intent
+#
+# Publicatievolgorde eerste 6 weken (scores zijn hierop afgestemd):
+#   Week 1: Jordan spotlight (klaar)
+#   Week 2: Chenin Blanc uit Zuid-Afrika        → score 95
+#   Week 3: Welke wijn bij braai                → score 94
+#   Week 4: Thistle & Weed spotlight            → score 93
+#   Week 5: Pinotage zonder vooroordelen        → score 91
+#   Week 6: Keermont spotlight                  → score 89
 
 pillars:
 
   zuid_afrikaanse_wijn:
     title: "Zuid-Afrikaanse wijn voor Nederlandse liefhebbers"
     slug: zuid-afrikaanse-wijn
-    coverage_target: 12 # aantal artikelen dat we uiteindelijk willen
+    coverage_target: 8
     description: >
       Pillar die de brede context neerzet: geschiedenis, streken, stijlen,
       waarom Zuid-Afrika als wijnland anders is. De lander voor mensen die
@@ -25,47 +33,44 @@ pillars:
     search_intent: informational
     target_url_path: /blogs/zuid-afrika/zuid-afrikaanse-wijn-gids
     clusters:
-      - title: "Stellenbosch: wat je moet weten over Zuid-Afrika's bekendste streek"
-        keyword: "Stellenbosch wijn"
-        intent: informational
-        opportunity_score: 78
-        angle: Stellenbosch als veilige ingang in ZA wijn, met nadruk op bodemvariatie
-        linked_products: [jordan-chardonnay]
-      - title: "Swartland uitgelegd: waarom dit gebied anders is dan Stellenbosch"
-        keyword: "Swartland wijn"
-        intent: informational
-        opportunity_score: 82
-        angle: Swartland als ruigere tegenhanger, graniet/schist terroir, old-vine Chenin
-        linked_products: []
-      - title: "Hemel-en-Aarde Valley: koelklimaat-wijn uit Zuid-Afrika"
-        keyword: "Hemel-en-Aarde wijn"
-        intent: informational
-        opportunity_score: 85
-        angle: Hoe een zeebries 15 km van de kust een koelklimaat creëert
-        linked_products: [creation-sauvignon-blanc]
       - title: "Chenin Blanc uit Zuid-Afrika: waarom het niet op Vouvray lijkt"
         keyword: "Chenin Blanc Zuid-Afrika"
         intent: informational
-        opportunity_score: 88
-        angle: Verschil met Loire, old vines, stilistisch spectrum
-        linked_products: []
+        opportunity_score: 95
+        angle: >
+          Verschil met Loire (warmer, droger, meer textuur), old vines in Swartland
+          en Stellenbosch, stilistisch spectrum van houtvrij fris tot amfora-complex.
+          Mullineux, Sadie en Alheit als concrete voorbeelden uit ons assortiment.
+        linked_products: [mullineux-old-vines-white, sadie-palladius, alheit-cartology]
       - title: "Pinotage zonder vooroordelen: het verhaal achter de Zuid-Afrikaanse handtekening"
         keyword: "Pinotage uitleg"
         intent: informational
-        opportunity_score: 72
-        angle: Slechte reputatie nuanceren, moderne stijlen, wat je kunt verwachten
-        linked_products: []
+        opportunity_score: 91
+        angle: >
+          Slechte reputatie nuanceren (rubbery jaren 90 vs. moderne stijlen),
+          wat je kunt verwachten, Kanonkop als serieus referentiepunt.
+        linked_products: [kanonkop-kadette]
+      - title: "Stellenbosch: wat je moet weten over Zuid-Afrika's bekendste streek"
+        keyword: "Stellenbosch wijn"
+        intent: informational
+        opportunity_score: 65
+        angle: >
+          Stellenbosch als veilige ingang in ZA wijn, nadruk op bodemvariatie
+          (graniet vs. klei), hoogteverschil, diverse stijlen. Jordan als anker.
+        linked_products: [jordan-chardonnay, kanonkop-kadette]
       - title: "Methode Cap Classique: de Zuid-Afrikaanse mousserende wijn"
         keyword: "Methode Cap Classique"
         intent: informational
         opportunity_score: 68
-        angle: Verschil met champagne, welke huizen het goed doen
-        linked_products: []
+        angle: >
+          Verschil met champagne (klimaat, druivenrassen, prijs-kwaliteit),
+          Graham Beck als toegankelijk startpunt, Obama-anekdote als haak.
+        linked_products: [graham-beck-brut-rose]
 
   wijn_en_spijs:
     title: "Wijn-spijs combinaties met Zuid-Afrikaanse wijn"
     slug: wijn-en-spijs
-    coverage_target: 8
+    coverage_target: 6
     description: >
       Commercieel-intentie pillar. Mensen die "wat drink ik bij X" zoeken
       zijn dichter bij een aankoop. Elk cluster koppelt een concreet gerecht
@@ -77,35 +82,49 @@ pillars:
       - title: "Welke wijn bij braai: Zuid-Afrikaanse keuzes voor op de barbecue"
         keyword: "wijn bij braai"
         intent: commercial
-        opportunity_score: 90
-        angle: Braai = bbq in ZA cultuur, lokale pairings geven authenticiteit
-        linked_products: []
+        opportunity_score: 94
+        angle: >
+          Braai = bbq in ZA cultuur, geeft het artikel autoriteit. Rood vlees →
+          Kanonkop Pinotage of Boekenhoutskloof Syrah. Vis/groente op de braai →
+          Chenin of Mullineux. Seizoensrelevantie (mei-september) expliciet noemen.
+        linked_products: [kanonkop-kadette, boekenhoutskloof-syrah, mullineux-old-vines-white]
       - title: "Welke wijn bij bobotie"
         keyword: "wijn bij bobotie"
         intent: commercial
-        opportunity_score: 86
-        angle: Specifiek Kaaps gerecht, Chenin of lichte rood, zeldzame NL zoekterm met lage concurrentie
-        linked_products: []
-      - title: "Chardonnay bij vis: wanneer houtgelagerd werkt en wanneer niet"
-        keyword: "Chardonnay bij vis"
-        intent: commercial
-        opportunity_score: 74
-        angle: Case voor Jordan Barrel Fermented bij vis met saus, niet bij oesters
-        linked_products: [jordan-chardonnay]
-      - title: "Zuid-Afrikaanse wijn bij Aziatisch eten"
-        keyword: "wijn bij Aziatisch eten Zuid-Afrika"
-        intent: commercial
         opportunity_score: 70
-        angle: Chenin als veelzijdige match, off-dry stijlen bij pittige gerechten
-        linked_products: []
+        angle: >
+          Specifiek Kaaps gerecht, zoet-hartige balance vraagt om licht rood of
+          off-dry wit. Zeldzame NL zoekterm met lage concurrentie. Pinotage of
+          Chenin als suggestie, uitleggen waarom.
+        linked_products: [kanonkop-kadette, mullineux-old-vines-white]
+      - title: "Chenin Blanc bij vis: wanneer het werkt en wanneer niet"
+        keyword: "Chenin Blanc bij vis"
+        intent: commercial
+        opportunity_score: 72
+        angle: >
+          Specifieker en eerlijker dan de generieke "Chardonnay bij vis"-aanpak.
+          Mullineux of Sadie bij gegrilde vis met saus, niet bij oesters.
+          Uitleg waarom textuur en zuur van Chenin beter matcht dan houtgelagerde
+          Chardonnay bij delicate vis.
+        linked_products: [mullineux-old-vines-white, alheit-cartology]
+      - title: "Zuid-Afrikaanse wijn cadeau onder 35 euro"
+        keyword: "Zuid-Afrikaanse wijn cadeau"
+        intent: transactional
+        opportunity_score: 75
+        angle: >
+          Seizoenspiek rond kerst/vaderdag/moederdag. Transactionele intent:
+          mensen zoeken een cadeau, niet een cursus wijn. Drie concrete
+          suggesties op prijs (onder €25, €25-35, iets bijzonders). Eerlijk
+          over wat je voor dat geld krijgt.
+        linked_products: [kanonkop-kadette, graham-beck-brut-rose, mullineux-old-vines-white]
 
   ontdek_het_wijnhuis:
     title: "Ontmoet de wijnhuizen in onze selectie"
     slug: wijnhuizen
-    coverage_target: 9 # één per wijn in assortiment
+    coverage_target: 8
     description: >
       Producer-spotlights, één per wijnmaker in de selectie. Dit zijn
-      bottom-funnel commerciële pagina's die de productpagina ondersteunen
+      bottom-funnel transactionele pagina's die de productpagina ondersteunen
       met verhaal + E-E-A-T. Altijd gekoppeld aan een concreet product.
     primary_keyword: "[wijnhuis] Zuid-Afrika"
     search_intent: transactional
@@ -117,25 +136,52 @@ pillars:
         opportunity_score: 92
         angle: Gary Jordan als geoloog, hoe hij terroir leest, Decanter award als objectief bewijs
         linked_products: [jordan-chardonnay]
-      - title: "Creation: Franse wortels op de Hemel-en-Aarde ridge"
-        keyword: "Creation wijn Hemel-en-Aarde"
+        published: true  # week 1 — al klaar
+      - title: "Thistle & Weed: natuurwijn uit Zuid-Afrika met een eigen logica"
+        keyword: "Thistle & Weed wijn"
+        intent: transactional
+        opportunity_score: 93
+        angle: >
+          Franco Lourens' aanpak: geen toegevoegd sulfiet, wilde gisting, Cinsault
+          en Chenin uit oude wijngaarden. Waarom dit anders is dan de gemiddelde
+          "natural wine" kreet. Eerlijk: niet voor iedereen, wel voor wie nieuws
+          zoekt.
+        linked_products: [thistle-weed-roller-pigeon, thistle-weed-wine]
+      - title: "Keermont: drie wijnen, één steile helling in Stellenbosch"
+        keyword: "Keermont wijn"
         intent: transactional
         opportunity_score: 89
-        angle: JC Martin's achtergrond, koelklimaat Sauvignon, World's Best Vineyards lijst
-        linked_products: [creation-sauvignon-blanc]
+        angle: >
+          Alex Starey's terroir-focus op de Banghoek vallei. Drie wijnen die
+          elk een ander stuk van de helling laten horen. Zeldzaam in NL,
+          drie producten in onze selectie = extra SEO-voordeel per artikel.
+        linked_products: [keermont-fleurfontein, keermont-terrasse, keermont-topside]
+      - title: "Remhoogte: familiewijnhuis met twee gezichten in Stellenbosch"
+        keyword: "Remhoogte wijn"
+        intent: transactional
+        opportunity_score: 80
+        angle: >
+          Murray Boustred combineert toegankelijke blends met serieuze
+          single-vineyard bottlingen. Twee producten in onze selectie,
+          goed als ingang voor mensen die ZA wijn nog ontdekken.
+        linked_products: [remhoogte-bouquet-blanc, remhoogte-estate-red]
 
-# Kandidaat-keywords die nog onderzocht moeten worden door research.py
+# Kandidaat-keywords voor research.py
 research_seeds:
   - "Zuid-Afrikaanse wijn Nederland"
   - "beste Chenin Blanc"
-  - "Stellenbosch of Swartland"
   - "Pinotage smaak"
   - "Syrah Zuid-Afrika"
-  - "biologische wijn Zuid-Afrika"
-  - "wijn proeven thuis Zuid-Afrika"
+  - "wijn cadeau onder 35 euro"
   - "Zuid-Afrikaanse wijn cadeau"
-  - "wijn bij lamsvlees Zuid-Afrika"
+  - "wijn bij lamsvlees"
   - "natuurwijn Zuid-Afrika"
+  - "Chenin Blanc bij vis"
+  - "wijn bij braai"
+  - "Thistle Weed wijn kopen"
+  - "Keermont wijn"
+  - "Remhoogte wijn"
+  - "Methode Cap Classique Nederland"
 
 # Scoring gewichten voor planner
 scoring:

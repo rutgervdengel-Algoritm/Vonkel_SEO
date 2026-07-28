@@ -1,9 +1,9 @@
 {
   "_meta": {
     "synced_at": null,
-    "source": "seed — vervang door live Shopify sync (python -m src.publisher --sync-products)",
-    "count": 9,
-    "note": "Dit zijn plaatsgebruiker-entries met realistische maar ongeverifieerde details. De pipeline zal proberen specifieke claims te verifiëren voor ze in een artikel terechtkomen."
+    "source": "seed — vervang door live Shopify sync (uv run python -m src.publisher --sync-products)",
+    "count": 11,
+    "note": "Handles moeten exact overeenkomen met Shopify product handles. Draai --sync-products zodra credentials klaarsataan."
   },
   "products": [
     {
@@ -21,22 +21,6 @@
       "url": "https://www.vonkelwijnen.nl/products/jordan-chardonnay",
       "rare_in_nl": false,
       "notes": "Gary Jordan is geoloog van origine; de familie plantte vanaf 1982. Decanter noemde hun Chardonnay in 2014 'best in the world'."
-    },
-    {
-      "handle": "creation-sauvignon-blanc",
-      "title": "Creation Sauvignon Blanc",
-      "producer": "Creation Wines",
-      "winemaker": "Jean-Claude (JC) Martin",
-      "region": "Walker Bay",
-      "sub_region": "Hemel-en-Aarde Ridge",
-      "grape": "Sauvignon Blanc",
-      "style": "wit, houtvrij, koelklimaat",
-      "vintage_current": null,
-      "price_eur": null,
-      "in_stock": true,
-      "url": "https://www.vonkelwijnen.nl/products/creation-sauvignon-blanc",
-      "rare_in_nl": false,
-      "notes": "Opgericht 2002 door JC en Carolyn Martin. Eerste oogst 2006. Vijf SB-klonen op koele zuidhellingen."
     },
     {
       "handle": "mullineux-old-vines-white",
@@ -87,22 +71,6 @@
       "notes": "Cartology is een assemblage uit oude Chenin-wijngaarden verspreid over de Kaap. Tim Atkin-favoriet."
     },
     {
-      "handle": "storm-vrede-pinot-noir",
-      "title": "Storm Vrede Pinot Noir",
-      "producer": "Storm Wines",
-      "winemaker": "Hannes Storm",
-      "region": "Hemel-en-Aarde Valley",
-      "sub_region": "Upper Hemel-en-Aarde",
-      "grape": "Pinot Noir",
-      "style": "rood, koelklimaat, single-vineyard",
-      "vintage_current": null,
-      "price_eur": null,
-      "in_stock": true,
-      "url": "https://www.vonkelwijnen.nl/products/storm-vrede-pinot-noir",
-      "rare_in_nl": true,
-      "notes": "Hannes Storm was lang cellar master bij Hamilton Russell. Eigen project sinds 2012. Single-vineyard focus."
-    },
-    {
       "handle": "kanonkop-kadette",
       "title": "Kanonkop Kadette Pinotage",
       "producer": "Kanonkop Wine Estate",
@@ -149,6 +117,102 @@
       "url": "https://www.vonkelwijnen.nl/products/graham-beck-brut-rose",
       "rare_in_nl": false,
       "notes": "Graham Beck MCC was de bubbel bij Obama's inauguratie. Pieter Ferreira wordt 'Mr Bubbles' genoemd in ZA."
+    },
+    {
+      "handle": "thistle-weed-roller-pigeon",
+      "title": "Thistle & Weed Roller Pigeon",
+      "producer": "Thistle & Weed Wines",
+      "winemaker": "Franco Lourens",
+      "region": "Western Cape",
+      "sub_region": null,
+      "grape": "Cinsault",
+      "style": "rood, natuurwijn, wilde gisting, geen sulfiet",
+      "vintage_current": null,
+      "price_eur": null,
+      "in_stock": true,
+      "url": "https://www.vonkelwijnen.nl/products/thistle-weed-roller-pigeon",
+      "rare_in_nl": true,
+      "notes": "PLACEHOLDER — controleer handle en titel via --sync-products. Franco Lourens, geen toegevoegd sulfiet, wilde gisting."
+    },
+    {
+      "handle": "keermont-fleurfontein",
+      "title": "Keermont Fleurfontein",
+      "producer": "Keermont Vineyards",
+      "winemaker": "Alex Starey",
+      "region": "Stellenbosch",
+      "sub_region": "Banghoek Valley",
+      "grape": "Chenin Blanc",
+      "style": "wit, terroir-gedreven, steile helling",
+      "vintage_current": null,
+      "price_eur": null,
+      "in_stock": true,
+      "url": "https://www.vonkelwijnen.nl/products/keermont-fleurfontein",
+      "rare_in_nl": true,
+      "notes": "PLACEHOLDER — controleer handle en titel via --sync-products. Alex Starey, Banghoek vallei, Stellenbosch."
+    },
+    {
+      "handle": "keermont-terrasse",
+      "title": "Keermont Terrasse",
+      "producer": "Keermont Vineyards",
+      "winemaker": "Alex Starey",
+      "region": "Stellenbosch",
+      "sub_region": "Banghoek Valley",
+      "grape": "Syrah blend",
+      "style": "rood, terroir-gedreven, steile helling",
+      "vintage_current": null,
+      "price_eur": null,
+      "in_stock": true,
+      "url": "https://www.vonkelwijnen.nl/products/keermont-terrasse",
+      "rare_in_nl": true,
+      "notes": "PLACEHOLDER — controleer handle en titel via --sync-products."
+    },
+    {
+      "handle": "keermont-topside",
+      "title": "Keermont Topside",
+      "producer": "Keermont Vineyards",
+      "winemaker": "Alex Starey",
+      "region": "Stellenbosch",
+      "sub_region": "Banghoek Valley",
+      "grape": "Cabernet Franc blend",
+      "style": "rood, terroir-gedreven, bovenste perceel",
+      "vintage_current": null,
+      "price_eur": null,
+      "in_stock": true,
+      "url": "https://www.vonkelwijnen.nl/products/keermont-topside",
+      "rare_in_nl": true,
+      "notes": "PLACEHOLDER — controleer handle en titel via --sync-products."
+    },
+    {
+      "handle": "remhoogte-bouquet-blanc",
+      "title": "Remhoogte Bouquet Blanc",
+      "producer": "Remhoogte Wine Estate",
+      "winemaker": "Murray Boustred",
+      "region": "Stellenbosch",
+      "sub_region": null,
+      "grape": "witte blend",
+      "style": "wit, toegankelijk",
+      "vintage_current": null,
+      "price_eur": null,
+      "in_stock": true,
+      "url": "https://www.vonkelwijnen.nl/products/remhoogte-bouquet-blanc",
+      "rare_in_nl": false,
+      "notes": "PLACEHOLDER — controleer handle en titel via --sync-products. Murray Boustred, Stellenbosch."
+    },
+    {
+      "handle": "remhoogte-estate-red",
+      "title": "Remhoogte Estate Red",
+      "producer": "Remhoogte Wine Estate",
+      "winemaker": "Murray Boustred",
+      "region": "Stellenbosch",
+      "sub_region": null,
+      "grape": "rode blend",
+      "style": "rood, toegankelijk",
+      "vintage_current": null,
+      "price_eur": null,
+      "in_stock": true,
+      "url": "https://www.vonkelwijnen.nl/products/remhoogte-estate-red",
+      "rare_in_nl": false,
+      "notes": "PLACEHOLDER — controleer handle en titel via --sync-products."
     }
   ]
 }
