@@ -27,6 +27,7 @@ OUTPUT_DIR = ROOT / "output"
 
 BRAND_YAML = CONFIG_DIR / "brand.yaml"
 SEO_YAML = CONFIG_DIR / "seo_targets.yaml"
+SCHRIJF_INSTRUCTIE_MD = CONFIG_DIR / "schrijf_instructie.md"
 PRODUCTS_JSON = DATA_DIR / "products.json"
 KEYWORDS_JSON = DATA_DIR / "keyword_bank.json"
 PUBLISHED_JSON = DATA_DIR / "published.json"
@@ -72,6 +73,12 @@ def env(key: str, default: str | None = None, *, required: bool = False) -> str 
 def load_brand() -> dict[str, Any]:
     with BRAND_YAML.open("r", encoding="utf-8") as f:
         return yaml.safe_load(f)
+
+
+def load_schrijf_instructie() -> str:
+    if SCHRIJF_INSTRUCTIE_MD.exists():
+        return SCHRIJF_INSTRUCTIE_MD.read_text(encoding="utf-8")
+    return ""
 
 
 @lru_cache(maxsize=1)

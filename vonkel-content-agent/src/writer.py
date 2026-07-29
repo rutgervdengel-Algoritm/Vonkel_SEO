@@ -16,7 +16,7 @@ from typing import Any
 import yaml
 
 from .planner import Brief
-from .utils import OUTPUT_DIR, env, get_logger, load_brand, now_iso
+from .utils import OUTPUT_DIR, env, get_logger, load_brand, load_schrijf_instructie, now_iso
 
 log = get_logger("writer")
 
@@ -253,7 +253,10 @@ def write_outputs(brief: Brief, frontmatter: dict[str, Any], body: str) -> Path:
 
 def write_article(brief: Brief, *, model: str) -> Path:
     brand = load_brand()
+    seo_instructie = load_schrijf_instructie()
     system = build_system_prompt(brand)
+    if seo_instructie:
+        system = system + "\n\n---\n\nADDITIONELE SEO-SCHRIJFINSTRUCTIE\n\n" + seo_instructie
     user = build_user_prompt(brief)
     raw = call_claude(system, user, model=model)
     fm, body = parse_article(raw)
